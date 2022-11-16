@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02Eje2_3.MainPage"
+             BackgroundColor="#61F1A0 ">
+
+    <StackLayout>
+
+        <StackLayout Orientation="Horizontal"
+                     BackgroundColor="#94DCF7"
+                      HeightRequest="250" 
+               Padding="20">
+
+            <Image Source="grabar.png"
+                   
+                   WidthRequest="350" 
+                   HeightRequest="60"></Image>
+        </StackLayout>
+    
+        
+        <Frame BackgroundColor="#7FB3D5 " 
+               Padding="10" 
+               CornerRadius="0">
+            
+           
+        <Entry Placeholder="Descripción" 
+               Margin="10,40,50,10" 
+               x:Name="txtdescripcion"/>
+        </Frame>
+        <Button Text="Grabar Audios" 
+                   VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                x:Name="B_Grabar" 
+                Margin="125,10,125,0" 
+                Clicked="B_Grabar_Clicked"/>
+        
+        <Button Text="Lista  de Audios" 
+               
+                x:Name="B_Ver" 
+                Margin="125,10,125,0" 
+                Clicked="B_Ver_Clicked" AutomationProperties.IsInAccessibleTree="False"/>
+
+        <Grid Margin="0,10,20,40" Opacity="5">
+
+
+          
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
